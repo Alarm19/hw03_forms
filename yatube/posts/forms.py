@@ -8,3 +8,5 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ['text', 'group']
         fields_required = ['text']
+        labels = {'text': 'Текст поста',
+                  'group': 'Группа'}
